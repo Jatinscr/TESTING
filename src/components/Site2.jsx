@@ -23,12 +23,8 @@ import {
   createTheme,
   useScrollTrigger,
   Slide,
-  Divider,
-  Paper,
-  Avatar,
   Chip,
   useMediaQuery,
-  colors,
   Link,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
@@ -49,11 +45,8 @@ import {
   CheckCircle,
   Dashboard,
   Code,
-  Web,
   Devices,
-  BusinessCenter,
   Send,
-  ExpandMore,
   ChevronRight,
   EmojiEvents,
   Business,
@@ -479,8 +472,6 @@ function ScrollTop() {
 
 // Hero Section
 function Hero() {
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
   return (
     <Box
       id="home"
@@ -711,8 +702,6 @@ function Hero() {
 }
 
 function AboutCompany() {
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
   return (
     <Box
       id="about"
@@ -2017,7 +2006,8 @@ function Footer() {
               fontSize: "0.75rem",
             }}
           >
-             {new Date().getFullYear()} Crafting ideas into reality — © 2025 SAINI COLLECTION.
+            {new Date().getFullYear()} Crafting ideas into reality — © 2025
+            SAINI COLLECTION.
           </Typography>
 
           <Box
